@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D86FDFEB24E58F0E00481CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FDFEA24E58F0E00481CC1 /* AppDelegate.swift */; };
+		D86FDFEF24E58F0E00481CC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FDFEE24E58F0E00481CC1 /* ViewController.swift */; };
+		D86FDFF224E58F0E00481CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86FDFF024E58F0E00481CC1 /* Main.storyboard */; };
+		D86FDFF424E58F1000481CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86FDFF324E58F1000481CC1 /* Assets.xcassets */; };
+		D86FDFF724E58F1000481CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86FDFF524E58F1000481CC1 /* LaunchScreen.storyboard */; };
+		D86FE00924E5905F00481CC1 /* ThermalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86FE00024E58FAC00481CC1 /* ThermalSDK.framework */; };
+		D86FE00A24E5905F00481CC1 /* ThermalSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D86FE00024E58FAC00481CC1 /* ThermalSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C54494271DC6E200393276 /* libavcodec.62.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5448A271DC6BB00393276 /* libavcodec.62.dylib.framework */; };
+		D8C54495271DC6E200393276 /* libavcodec.62.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5448A271DC6BB00393276 /* libavcodec.62.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C54496271DC6E300393276 /* libavdevice.62.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54488271DC6BB00393276 /* libavdevice.62.dylib.framework */; };
+		D8C54497271DC6E300393276 /* libavdevice.62.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54488271DC6BB00393276 /* libavdevice.62.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C54498271DC6E500393276 /* libavfilter.11.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54489271DC6BB00393276 /* libavfilter.11.dylib.framework */; };
+		D8C54499271DC6E500393276 /* libavfilter.11.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54489271DC6BB00393276 /* libavfilter.11.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C5449A271DC6E600393276 /* libavformat.62.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54485271DC6BB00393276 /* libavformat.62.dylib.framework */; };
+		D8C5449B271DC6E600393276 /* libavformat.62.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54485271DC6BB00393276 /* libavformat.62.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C5449C271DC6E800393276 /* libavutil.60.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54486271DC6BB00393276 /* libavutil.60.dylib.framework */; };
+		D8C5449D271DC6E800393276 /* libavutil.60.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54486271DC6BB00393276 /* libavutil.60.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C5449E271DC6E900393276 /* liblive666.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5448B271DC6BB00393276 /* liblive666.dylib.framework */; };
+		D8C5449F271DC6E900393276 /* liblive666.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5448B271DC6BB00393276 /* liblive666.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C544A0271DC6EA00393276 /* libswresample.6.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54484271DC6BB00393276 /* libswresample.6.dylib.framework */; };
+		D8C544A1271DC6EA00393276 /* libswresample.6.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54484271DC6BB00393276 /* libswresample.6.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C544A2271DC6EC00393276 /* libswscale.9.dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54487271DC6BB00393276 /* libswscale.9.dylib.framework */; };
+		D8C544A3271DC6EC00393276 /* libswscale.9.dylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C54487271DC6BB00393276 /* libswscale.9.dylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8CD9062255BECF6000F6846 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CD9061255BECF6000F6846 /* ExternalAccessory.framework */; };
+		D8D29F4C29434A0200F110FF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D29F4B29434A0200F110FF /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D86FE00B24E5905F00481CC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8C5449D271DC6E800393276 /* libavutil.60.dylib.framework in Embed Frameworks */,
+				D86FE00A24E5905F00481CC1 /* ThermalSDK.framework in Embed Frameworks */,
+				D8C5449F271DC6E900393276 /* liblive666.dylib.framework in Embed Frameworks */,
+				D8C5449B271DC6E600393276 /* libavformat.62.dylib.framework in Embed Frameworks */,
+				D8C54495271DC6E200393276 /* libavcodec.62.dylib.framework in Embed Frameworks */,
+				D8C54497271DC6E300393276 /* libavdevice.62.dylib.framework in Embed Frameworks */,
+				D8C54499271DC6E500393276 /* libavfilter.11.dylib.framework in Embed Frameworks */,
+				D8C544A3271DC6EC00393276 /* libswscale.9.dylib.framework in Embed Frameworks */,
+				D8C544A1271DC6EA00393276 /* libswresample.6.dylib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D86FDFE724E58F0E00481CC1 /* FLIROneCameraSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLIROneCameraSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86FDFEA24E58F0E00481CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D86FDFEE24E58F0E00481CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D86FDFF124E58F0E00481CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D86FDFF324E58F1000481CC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D86FDFF624E58F1000481CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D86FDFF824E58F1000481CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86FE00024E58FAC00481CC1 /* ThermalSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ThermalSDK.framework; path = ../ThermalSDK.framework; sourceTree = "<group>"; };
+		D8C54484271DC6BB00393276 /* libswresample.6.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libswresample.6.dylib.framework; path = ../libswresample.6.dylib.framework; sourceTree = "<group>"; };
+		D8C54485271DC6BB00393276 /* libavformat.62.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libavformat.62.dylib.framework; path = ../libavformat.62.dylib.framework; sourceTree = "<group>"; };
+		D8C54486271DC6BB00393276 /* libavutil.60.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libavutil.60.dylib.framework; path = ../libavutil.60.dylib.framework; sourceTree = "<group>"; };
+		D8C54487271DC6BB00393276 /* libswscale.9.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libswscale.9.dylib.framework; path = ../libswscale.9.dylib.framework; sourceTree = "<group>"; };
+		D8C54488271DC6BB00393276 /* libavdevice.62.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libavdevice.62.dylib.framework; path = ../libavdevice.62.dylib.framework; sourceTree = "<group>"; };
+		D8C54489271DC6BB00393276 /* libavfilter.11.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libavfilter.11.dylib.framework; path = ../libavfilter.11.dylib.framework; sourceTree = "<group>"; };
+		D8C5448A271DC6BB00393276 /* libavcodec.62.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libavcodec.62.dylib.framework; path = ../libavcodec.62.dylib.framework; sourceTree = "<group>"; };
+		D8C5448B271DC6BB00393276 /* liblive666.dylib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = liblive666.dylib.framework; path = ../liblive666.dylib.framework; sourceTree = "<group>"; };
+		D8CD9061255BECF6000F6846 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D8D29F4A294349FD00F110FF /* FLIROneCameraSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLIROneCameraSwift.entitlements; sourceTree = "<group>"; };
+		D8D29F4B29434A0200F110FF /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D86FDFE424E58F0E00481CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5449A271DC6E600393276 /* libavformat.62.dylib.framework in Frameworks */,
+				D8C544A2271DC6EC00393276 /* libswscale.9.dylib.framework in Frameworks */,
+				D8C5449E271DC6E900393276 /* liblive666.dylib.framework in Frameworks */,
+				D8C54496271DC6E300393276 /* libavdevice.62.dylib.framework in Frameworks */,
+				D8C54498271DC6E500393276 /* libavfilter.11.dylib.framework in Frameworks */,
+				D8C5449C271DC6E800393276 /* libavutil.60.dylib.framework in Frameworks */,
+				D8CD9062255BECF6000F6846 /* ExternalAccessory.framework in Frameworks */,
+				D8D29F4C29434A0200F110FF /* NetworkExtension.framework in Frameworks */,
+				D86FE00924E5905F00481CC1 /* ThermalSDK.framework in Frameworks */,
+				D8C54494271DC6E200393276 /* libavcodec.62.dylib.framework in Frameworks */,
+				D8C544A0271DC6EA00393276 /* libswresample.6.dylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D86FDFDE24E58F0E00481CC1 = {
+			isa = PBXGroup;
+			children = (
+				D86FDFE924E58F0E00481CC1 /* FLIROneCameraSwift */,
+				D86FDFE824E58F0E00481CC1 /* Products */,
+				D86FDFFE24E58FAC00481CC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D86FDFE824E58F0E00481CC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86FDFE724E58F0E00481CC1 /* FLIROneCameraSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D86FDFE924E58F0E00481CC1 /* FLIROneCameraSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D8D29F4A294349FD00F110FF /* FLIROneCameraSwift.entitlements */,
+				D86FDFEA24E58F0E00481CC1 /* AppDelegate.swift */,
+				D86FDFEE24E58F0E00481CC1 /* ViewController.swift */,
+				D86FDFF024E58F0E00481CC1 /* Main.storyboard */,
+				D86FDFF324E58F1000481CC1 /* Assets.xcassets */,
+				D86FDFF524E58F1000481CC1 /* LaunchScreen.storyboard */,
+				D86FDFF824E58F1000481CC1 /* Info.plist */,
+			);
+			path = FLIROneCameraSwift;
+			sourceTree = "<group>";
+		};
+		D86FDFFE24E58FAC00481CC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D29F4B29434A0200F110FF /* NetworkExtension.framework */,
+				D8C5448A271DC6BB00393276 /* libavcodec.62.dylib.framework */,
+				D8C54488271DC6BB00393276 /* libavdevice.62.dylib.framework */,
+				D8C54489271DC6BB00393276 /* libavfilter.11.dylib.framework */,
+				D8C54485271DC6BB00393276 /* libavformat.62.dylib.framework */,
+				D8C54486271DC6BB00393276 /* libavutil.60.dylib.framework */,
+				D8C5448B271DC6BB00393276 /* liblive666.dylib.framework */,
+				D8C54484271DC6BB00393276 /* libswresample.6.dylib.framework */,
+				D8C54487271DC6BB00393276 /* libswscale.9.dylib.framework */,
+				D8CD9061255BECF6000F6846 /* ExternalAccessory.framework */,
+				D86FE00024E58FAC00481CC1 /* ThermalSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D86FDFE624E58F0E00481CC1 /* FLIROneCameraSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86FDFFB24E58F1000481CC1 /* Build configuration list for PBXNativeTarget "FLIROneCameraSwift" */;
+			buildPhases = (
+				D86FDFE324E58F0E00481CC1 /* Sources */,
+				D86FDFE424E58F0E00481CC1 /* Frameworks */,
+				D86FDFE524E58F0E00481CC1 /* Resources */,
+				D86FE00B24E5905F00481CC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLIROneCameraSwift;
+			productName = FLIROneCameraSwift;
+			productReference = D86FDFE724E58F0E00481CC1 /* FLIROneCameraSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D86FDFDF24E58F0E00481CC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = sample;
+				TargetAttributes = {
+					D86FDFE624E58F0E00481CC1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D86FDFE224E58F0E00481CC1 /* Build configuration list for PBXProject "FLIROneCameraSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D86FDFDE24E58F0E00481CC1;
+			productRefGroup = D86FDFE824E58F0E00481CC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D86FDFE624E58F0E00481CC1 /* FLIROneCameraSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D86FDFE524E58F0E00481CC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86FDFF724E58F1000481CC1 /* LaunchScreen.storyboard in Resources */,
+				D86FDFF424E58F1000481CC1 /* Assets.xcassets in Resources */,
+				D86FDFF224E58F0E00481CC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D86FDFE324E58F0E00481CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86FDFEF24E58F0E00481CC1 /* ViewController.swift in Sources */,
+				D86FDFEB24E58F0E00481CC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D86FDFF024E58F0E00481CC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86FDFF124E58F0E00481CC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D86FDFF524E58F1000481CC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86FDFF624E58F1000481CC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D86FDFF924E58F1000481CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/..";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D86FDFFA24E58F1000481CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/..";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D86FDFFC24E58F1000481CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FLIROneCameraSwift/FLIROneCameraSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MZKWHVB56;
+				INFOPLIST_FILE = FLIROneCameraSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pranalabs.FLIROneCameraSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D86FDFFD24E58F1000481CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FLIROneCameraSwift/FLIROneCameraSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MZKWHVB56;
+				INFOPLIST_FILE = FLIROneCameraSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pranalabs.FLIROneCameraSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D86FDFE224E58F0E00481CC1 /* Build configuration list for PBXProject "FLIROneCameraSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86FDFF924E58F1000481CC1 /* Debug */,
+				D86FDFFA24E58F1000481CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86FDFFB24E58F1000481CC1 /* Build configuration list for PBXNativeTarget "FLIROneCameraSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86FDFFC24E58F1000481CC1 /* Debug */,
+				D86FDFFD24E58F1000481CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D86FDFDF24E58F0E00481CC1 /* Project object */;
+}
