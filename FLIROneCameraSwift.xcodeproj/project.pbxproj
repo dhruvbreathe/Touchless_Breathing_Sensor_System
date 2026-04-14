@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C896D842F8E7AB400A3AA12 /* UDPSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C896D832F8E79E400A3AA12 /* UDPSender.swift */; };
 		D86FDFEB24E58F0E00481CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FDFEA24E58F0E00481CC1 /* AppDelegate.swift */; };
 		D86FDFEF24E58F0E00481CC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FDFEE24E58F0E00481CC1 /* ViewController.swift */; };
 		D86FDFF224E58F0E00481CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86FDFF024E58F0E00481CC1 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C896D832F8E79E400A3AA12 /* UDPSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPSender.swift; sourceTree = "<group>"; };
 		D86FDFE724E58F0E00481CC1 /* FLIROneCameraSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLIROneCameraSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86FDFEA24E58F0E00481CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86FDFEE24E58F0E00481CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		D86FDFDE24E58F0E00481CC1 = {
 			isa = PBXGroup;
 			children = (
+				0C896D832F8E79E400A3AA12 /* UDPSender.swift */,
 				D86FDFE924E58F0E00481CC1 /* FLIROneCameraSwift */,
 				D86FDFE824E58F0E00481CC1 /* Products */,
 				D86FDFFE24E58FAC00481CC1 /* Frameworks */,
@@ -223,6 +226,7 @@
 			files = (
 				D86FDFEF24E58F0E00481CC1 /* ViewController.swift in Sources */,
 				D86FDFEB24E58F0E00481CC1 /* AppDelegate.swift in Sources */,
+				0C896D842F8E7AB400A3AA12 /* UDPSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,10 @@ class ViewController: UIViewController {
 
     let renderQueue = DispatchQueue(label: "render")
 
+    // Set this to the LAN IP of the machine running Unity.
+    // On the FLIR hotspot, devices get link-local 169.254.x.x addresses.
+    let udpSender = UDPSender(host: "169.254.220.80", port: 9000)
+
     let roiLayer: CAShapeLayer = {
         let l = CAShapeLayer()
         l.strokeColor = UIColor.systemYellow.cgColor
@@ -248,10 +252,11 @@ extension ViewController : FLIRStreamDelegate {
                             }
                         }
                         if let rect = measurements.getAllRectangles().first {
-                            let avg = rect.average.description()
-                            let mn = rect.min.description()
-                            let mx = rect.max.description()
-                            self.centerSpotLabel.text = "avg \(avg)   min \(mn)   max \(mx)"
+                            let avgC = rect.average.asCelsius().value
+                            let minC = rect.min.asCelsius().value
+                            let maxC = rect.max.asCelsius().value
+                            self.centerSpotLabel.text = String(format: "avg %.2f   min %.2f   max %.2f °C", avgC, minC, maxC)
+                            self.udpSender.send(avg: avgC, min: minC, max: maxC)
                         }
                     }
                     if let remoteControl = self.camera?.getRemoteControl(),
