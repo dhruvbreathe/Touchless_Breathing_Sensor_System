@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Editor workspace
+*.code-workspace
+
 # Xcode user-specific
 xcuserdata/
 *.xcuserstate

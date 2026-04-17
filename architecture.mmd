@@ -1,0 +1,45 @@
+graph TB
+    subgraph HW["🔴 FLIR ONE Edge Pro"]
+        CAM["Thermal 160×120 @ 8Hz<br/>+ Visual Camera<br/>+ BLE + WiFi Hotspot"]
+    end
+
+    subgraph IOS["🟢 iOS App"]
+        DISC["FLIRDiscovery<br/>BLE Scan"]
+        CONN["FLIRCamera<br/>pair → connect"]
+        STREAM["FLIRStream + FLIRThermalStreamer<br/>VividIR Pipeline"]
+        ROI["ROI Rectangle 30%×20%<br/>avg / min / max °C"]
+        DISPLAY["UIImageView + ROI Overlay<br/>+ Temperature Label"]
+        UDP["UDPSender<br/>JSON over UDP :9000"]
+    end
+
+    subgraph NET["🟡 FLIR WiFi Network"]
+        PKT["{t, avg, min, max}<br/>~8 packets/sec"]
+    end
+
+    subgraph UNITY["🔵 Unity App"]
+        RECV["ThermalUdpReceiver<br/>UdpClient :9000"]
+        DETECT["BreathingPhaseDisplay<br/>Smooth → d/dt → Classify"]
+        UI["Canvas Text<br/>INHALING · HOLDING · EXHALING"]
+    end
+
+    CAM -->|"BLE discovery"| DISC
+    DISC --> CONN
+    CAM -->|"WiFi thermal frames"| STREAM
+    CONN --> STREAM
+    STREAM -->|"onImageReceived"| ROI
+    ROI --> DISPLAY
+    ROI -->|"avg, min, max"| UDP
+    UDP --> PKT
+    PKT -->|"169.254.x.x"| RECV
+    RECV -->|"max value"| DETECT
+    DETECT -->|"phase enum"| UI
+
+    classDef hw fill:#8b2500,stroke:#ff6b35,color:#fff
+    classDef ios fill:#1a5c3a,stroke:#4aff9e,color:#fff
+    classDef net fill:#5c4a1a,stroke:#ffb347,color:#fff
+    classDef unity fill:#1a3a5c,stroke:#4a9eff,color:#fff
+
+    class CAM hw
+    class DISC,CONN,STREAM,ROI,DISPLAY,UDP ios
+    class PKT net
+    class RECV,DETECT,UI unity
